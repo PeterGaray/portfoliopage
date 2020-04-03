@@ -4,7 +4,7 @@
 <head></head>
 
 <body>
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style.css" type="text/css" rel="stylesheet">	<!-- place your links in <head> links go here </head> -->
 	<div class="header">
 		<div class="nav">
 			<div class="column">
@@ -69,9 +69,26 @@
 		<li><img class="linkedin" src="images/linkedincopy.png" alt="linkedin" height="25" width="25"></i></li>
 		<li><img class="dribbble" src="images/dribbblecopy.png" alt="dribbble" height="25" width="25"></li>
 		<li><img class="instagram" src="images/instagramcopy.png" alt="instagram" height="25" width="25"></i></li>
-		<li><img class="email" src="images/gmailcopy.png" alt="gmail" height="25" width="25"></i></li>
+		<li><img class="email" src="images/gmailcopy.png" alt="gmail" height="25" width="25"></i></li>   <!-- You don't start the <i> tag, so there is no need to for a closing </i> tag -->
 	</ul>
 	</div>
 </div>
 </body>
 </html>
+
+
+<!-- 
+You are giving all your images a fixed width/height, and some are wider than others, so when browsing the page on smaller scren / mobile, some images are wider while others are not. 
+Also your header is not as wide as some of the images, as your header/nav is 100% wide, but on a smaller screen the images are wider. So you end up with white space on the right side of the menu.
+
+Make the images larger / or let us click on them so we can read some of the text/details.
+
+Good start with flex. Add more responsiveness to it.
+
+You can design one 'container' div for the images you want to display on your page, and use the same container for all of them. So you don't need to design a new class for every image.
+
+If you prepare the images before you put them on the site, it will be easier to manipulate them, and woy won't have to resize all of them.
+
+Clean written code, easy to read and follow what is going on.
+
++1 for working github-->
